@@ -42,7 +42,7 @@
                 <div class="card-biodata mx-auto rounded-xl">
                     <div class="body-content">
                         <h1>Profile</h1>
-                        <div class="table">
+                        <div class="table-auto">
                             <table class="table">
                                 <tbody>
                                     <tr>

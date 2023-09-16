@@ -12,7 +12,7 @@ header {
 
 nav {
     background-color: #15171b;
-    z-index: 10000;
+    z-index: 100;
     position: fixed;
     display: flex;
 }
@@ -101,6 +101,7 @@ section {
 
 .card .bio .card-biodata:hover {
     background-color: hsl(var(--in));
+    transition: 500ms;
     display: flex;
     border: 100px;
     transform: 500ms;
@@ -156,6 +157,7 @@ section {
     margin-bottom: 1rem;
     padding: 1rem;
 }
+
 .card .content2 {
     margin-top: 8rem;
     margin-right: 1rem;
@@ -198,46 +200,141 @@ section {
     padding: 1rem;
 }
 
+.card .content3 {
+    margin-top: 8rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-image: url("../images/magang.png");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card .content3 .title {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.card .content3 .button {
+    display: flex;
+}
+
+.card .content3 .flex .grid {
+    background-color: #111316b6;
+}
+
+.card .content3 .flex .grid:hover {
+    background-color: #000000;
+    transition: 500ms;
+}
+
+.card .content3 .flex .grid .subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.card .content3 .flex {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.sert {
+    display: flex;
+    position: relative;
+    padding: 5rem;
+}
+
+.sert .flex .grid {
+    text-align: center;
+}
+
+.sert .flex .grid h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sert .flex .grid .grid .card {
+    cursor: pointer;
+    margin-top: 1rem;
+    height: fit-content;
+    justify-content: center;
+    place-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sert .flex .grid .grid .card:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    font-size: 1.2rem;
+}
+
+/* Gaya thumbnail gambar */
+.thumbnail {
+    cursor: pointer;
+    max-width: 100%;
+}
+
+/* Gaya overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Gaya gambar penuh dalam overlay */
+.full-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Gaya tombol close */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 footer {
     padding: 1rem;
     background-color: #111316;
     z-index: auto;
 }
 
-.grid a {
+footer .flex a {
     display: grid;
     font-size: 1rem;
     margin: 1rem;
 }
 
-.grid a:hover {
+footer .flex a:hover {
     display: grid;
     font-size: 1rem;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 500ms;
     font-weight: 700;
 }
 
-.svg .grid a svg:hover {
-    transform: scale(1.5);
+footer .svg .grid a svg:hover {
+    transform: scale(1.2);
     transition: 500ms;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 80%;
-    }
-    .header {
-        background-color: #333;
-        color: #fff;
-    }
-
-    .body-content h1 {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 414px) {
     body {
         font-size: 80%;
     }
@@ -295,5 +392,198 @@ footer {
         background-repeat: repeat-y;
         background-size: contain;
         height: auto;
+    }
+
+    .card .bio {
+        display: inline;
+    }
+
+    .card .bio .card-biodata {
+        width: screen;
+        display: inline;
+    }
+
+    .sert .flex .grid .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        background-color: #111316;
+        z-index: auto;
+        display: grid;
+    }
+
+    footer .flex {
+        display: inline;
+        flex-wrap: wrap;
+    }
+
+    footer .flex a {
+        display: flex;
+        font-size: 1rem;
+        margin-left: -3rem;
+    }
+
+    footer .flex a:hover {
+        display: flex;
+        font-size: 1rem;
+        transform: scale(1.2);
+        transition: 500ms;
+        font-weight: 700;
+    }
+
+    .svg .grid {
+        display: flex;
+    }
+
+    .svg .grid footer .svg .grid a svg:hover {
+        transform: scale(1.5);
+        transition: 500ms;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        font-size: 80%;
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+    }
+
+    section {
+        display: contents;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+    }
+
+    .card .home .card-home .hero-content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 4rem;
+    }
+
+    .card .home .card-home .hero-content img {
+        max-height: 10rem;
+        border-radius: 10%;
+    }
+
+    .card .home .card-home .hero-content .body-content {
+        display: inline;
+    }
+
+    .card .home .card-home .hero-content .card-body {
+        padding: 1rem;
+    }
+
+    .card .home .card-home .hero-content .card-body .body-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .card .home .card-home .hero-content .card-body .body-content p {
+        font-size: 0.8rem;
+    }
+
+    .card .home .card-home .hero-content .card-body .body-content a {
+        font-size: 0.8rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .card .content1 {
+        margin-top: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-image: url("../images/pao-20-21.jpg");
+        border-radius: 10px;
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: auto;
+    }
+
+    .card .bio {
+        display: inline;
+        padding: 1rem;
+        background-color: #201c1c94;
+    }
+
+    .card .bio .card-biodata {
+        width: screen;
+        display: flex;
+        background-color: #524c4c;
+    }
+
+    .card .bio .card-biodata:hover {
+        background-color: hsl(var(--in));
+        transition: 500ms;
+        display: flex;
+        border: 100px;
+        transform: 500ms;
+        color: black;
+        font-weight: 700;
+    }
+
+    .card .bio .card-biodata .body-content .table-auto table {
+        font-size: 0.8rem;
+    }
+
+    .sert {
+        display: flex;
+        position: relative;
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .sert .flex .grid h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: ceenter;
+    }
+
+    .sert .flex .grid .grid {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .sert .flex .grid .grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        background-color: #111316;
+        z-index: auto;
+        display: grid;
+    }
+
+    footer .flex {
+        display: inline;
+        flex-wrap: wrap;
+    }
+
+    footer .flex a {
+        display: flex;
+        font-size: 1rem;
+        margin-left: -3rem;
+    }
+
+    footer .flex a:hover {
+        display: flex;
+        font-size: 1rem;
+        transform: scale(1.2);
+        transition: 500ms;
+        font-weight: 700;
+    }
+
+    .svg .grid {
+        display: flex;
+    }
+
+    .svg .grid footer .svg .grid a svg:hover {
+        transform: scale(1.5);
+        transition: 500ms;
     }
 }

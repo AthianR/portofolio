@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/organisasi', function(){
     return view('profile.organisasi');
 });
+
+Route::get('/sertifikat', function(){
+    return view('profile.sertifikat');
+});
+
+Route::get('/project', function(){
+    return view('profile.project');
+});
+
+Route::get('/about', function(){
+    return view('about');
+});
