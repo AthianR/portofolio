@@ -90,11 +90,30 @@ section {
     display: flex;
     background-color: #201c1c94;
     height: 100vh;
+    padding: 4rem;
 }
 
-.card .card-biodata {
+.card .bio .card-biodata {
     background-color: #524c4c;
     display: flex;
+    border: 100px;
+}
+
+.card .bio .card-biodata:hover {
+    background-color: hsl(var(--in));
+    display: flex;
+    border: 100px;
+    transform: 500ms;
+    color: black;
+    font-weight: 700;
+}
+
+.card .bio .card-biodata .body-content h1 {
+    padding: 1rem;
+}
+
+.card .bio .card-biodata .body-content table {
+    font-size: 1rem;
 }
 
 .card .content1 {
@@ -122,6 +141,11 @@ section {
     background-color: #111316b6;
 }
 
+.card .content1 .flex .grid:hover {
+    background-color: #000000;
+    transition: 500ms;
+}
+
 .card .content1 .flex .grid .subtitle {
     font-size: 1.2rem;
     font-weight: 600;
@@ -132,6 +156,47 @@ section {
     margin-bottom: 1rem;
     padding: 1rem;
 }
+.card .content2 {
+    margin-top: 8rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-image: url("../images/pao-21-22.jpg");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card .content2 .title {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.card .content2 .button {
+    display: flex;
+}
+
+.card .content2 .flex .grid {
+    background-color: #111316b6;
+}
+
+.card .content2 .flex .grid:hover {
+    background-color: #000000;
+    transition: 500ms;
+}
+
+.card .content2 .flex .grid .subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.card .content2 .flex {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
 
 footer {
     padding: 1rem;
@@ -139,9 +204,23 @@ footer {
     z-index: auto;
 }
 
-.grid {
+.grid a {
     display: grid;
     font-size: 1rem;
+    margin: 1rem;
+}
+
+.grid a:hover {
+    display: grid;
+    font-size: 1rem;
+    transform: scale(1.5);
+    transition: 500ms;
+    font-weight: 700;
+}
+
+.svg .grid a svg:hover {
+    transform: scale(1.5);
+    transition: 500ms;
 }
 
 @media screen and (max-width: 768px) {

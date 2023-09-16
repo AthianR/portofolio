@@ -6,7 +6,7 @@
             <div class="image" id="image">
                 <div class="hero min-h-screen">
                     <div class="hero-content text-center">
-                        <div class="max-w-xl">
+                        <div class="ctn max-w-xl">
                             <h1 class="text-5xl font-bold">My Portofolio</h1>
                             <p class="py-6">Selamat datang di web Portofilio. Pada web ini saya mengunakan Framework Laravel  dan Tailwind CSS dengan ekstensi DaisyUi. Versi Framework Laravel yang saya gunakan yaitu v8.0</p>
                             <a href="#home" class="btn btn-primary">Get Started</a>
@@ -39,10 +39,10 @@
             </div>
 
             <div class="bio" id="biodata">
-                <div class="card-biodata mx-auto">
+                <div class="card-biodata mx-auto rounded-xl">
                     <div class="body-content">
                         <h1>Profile</h1>
-                        <div class="overflow-x-auto">
+                        <div class="table">
                             <table class="table">
                                 <tbody>
                                     <tr>
