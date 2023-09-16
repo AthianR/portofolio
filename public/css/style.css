@@ -1,0 +1,220 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    background-color: #15171b;
+    z-index: 10000;
+    position: fixed;
+    display: flex;
+}
+
+.navbar-start .dropdown ul {
+    background-color: #111316;
+}
+
+.navbar-start .dropdown ul li a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar-center {
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.card .image {
+    background-image: url("../images/bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: screen;
+}
+
+.card .home .card-home .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+.card .home .card-home .hero-content img {
+    max-height: 20rem;
+    border-radius: 10%;
+    margin-left: 6rem;
+}
+
+.body-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.body-content p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.body-content button {
+    margin-bottom: 5rem;
+}
+
+.card .home .biodata {
+    height: 100vh;
+    width: 100vh;
+}
+
+.card .home .biodata .body-content {
+    margin-block-start: 8rem;
+}
+
+.card .bio {
+    display: flex;
+    background-color: #201c1c94;
+    height: 100vh;
+}
+
+.card .card-biodata {
+    background-color: #524c4c;
+    display: flex;
+}
+
+.card .content1 {
+    margin-top: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-image: url("../images/pao-20-21.jpg");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card .content1 .title {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card .content1 .button {
+    display: flex;
+}
+
+.card .content1 .flex .grid {
+    background-color: #111316b6;
+}
+
+.card .content1 .flex .grid .subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.card .content1 .flex {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #111316;
+    z-index: auto;
+}
+
+.grid {
+    display: grid;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 80%;
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .body-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        font-size: 80%;
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+    }
+
+    section {
+        display: contents;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+    }
+
+    .card .home .card-home .hero-content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 4rem;
+    }
+
+    .card .home .card-home .hero-content img {
+        max-height: 10rem;
+        border-radius: 10%;
+    }
+
+    .body-content {
+        display: inline;
+    }
+
+    .body-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .body-content p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .body-content a {
+        font-size: 0.8rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .card .content1 {
+        margin-top: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-image: url("../images/pao-20-21.jpg");
+        border-radius: 10px;
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: auto;
+    }
+}
