@@ -33,12 +33,12 @@ nav {
 
 section {
     display: flex;
+    padding-top: 4rem;
 }
 
 .card {
     display: flex;
     width: 100%;
-    padding-top: 1rem;
 }
 
 .card .image {
@@ -46,6 +46,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: screen;
+    padding-top: 8rem;
 }
 
 .card .home .card-home .hero-content {
@@ -273,13 +274,19 @@ section {
     font-size: 1.2rem;
 }
 
-/* Gaya thumbnail gambar */
+.container {
+    margin: 4rem;
+}
+
+.container .crd {
+    padding: 5rem;
+}
+
 .thumbnail {
     cursor: pointer;
     max-width: 100%;
 }
 
-/* Gaya overlay */
 .overlay {
     display: none;
     position: fixed;
@@ -293,13 +300,11 @@ section {
     z-index: 1000;
 }
 
-/* Gaya gambar penuh dalam overlay */
 .full-image {
     max-width: 90%;
     max-height: 90%;
 }
 
-/* Gaya tombol close */
 .close-button {
     position: absolute;
     top: 10px;
@@ -472,12 +477,13 @@ footer .svg .grid a svg:hover {
         border-radius: 10%;
     }
 
-    .card .home .card-home .hero-content .body-content {
+    .card .home .card-home .hero-content .card-body {
+        padding: 1rem;
         display: inline;
     }
 
-    .card .home .card-home .hero-content .card-body {
-        padding: 1rem;
+    .card .home .card-home .hero-content .card-body .body-content {
+        display: inline;
     }
 
     .card .home .card-home .hero-content .card-body .body-content h1 {
@@ -485,13 +491,21 @@ footer .svg .grid a svg:hover {
     }
 
     .card .home .card-home .hero-content .card-body .body-content p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .card .home .card-home .hero-content .card-body .body-content a {
         font-size: 0.8rem;
         width: fit-content;
         height: fit-content;
+    }
+
+    .card .image .hero .hero-content .ctn h1 {
+        font-size: 2rem;
+    }
+
+    .card .image .hero .hero-content .ctn p {
+        font-size: 1rem;
     }
 
     .card .content1 {
@@ -503,6 +517,79 @@ footer .svg .grid a svg:hover {
         background-repeat: repeat-y;
         background-size: contain;
         height: auto;
+    }
+
+    .card .content1 .title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card .content1 .flex .grid .subtitle {
+        justify-content: center;
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .card .content1 .flex .grid .body-content p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .card .content2 {
+        margin-top: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-image: url("../images/pao-21-22.jpg");
+        border-radius: 10px;
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: auto;
+    }
+
+    .card .content2 .title {
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .card .content2 .flex .grid .subtitle {
+        justify-content: center;
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .card .content2 .flex .grid .body-content p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .card .content3 {
+        margin-top: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        background-image: url("../images/magang.png");
+        border-radius: 10px;
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: auto;
+    }
+
+    .card .content3 .title {
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+
+    .card .content3 .flex .grid .subtitle {
+        justify-content: center;
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .card .content3 .flex .grid .body-content p {
+        text-align: justify;
+        font-size: 1rem;
     }
 
     .card .bio {
