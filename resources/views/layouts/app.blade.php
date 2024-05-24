@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <title>Homepage - Athian Rizki</title>
 </head>
 
@@ -87,7 +87,7 @@
         </nav>
     </header>
 
-    {{-- <div class="container"> --}}
+
     @yield('content')
 
     <div class="w-10 h-10 bg-info rounded-full flex fixed bottom-4 right-10 cursor-pointer">
@@ -98,7 +98,6 @@
             </a>
         </span>
     </div>
-    {{-- </div> --}}
 
     <footer class="footer footer-center bg-base-200 text-base-content rounded">
         <div class="flex grid-flow-col gap-4">
@@ -172,7 +171,7 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>

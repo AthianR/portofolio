@@ -2,32 +2,34 @@
 @section('content')
     <section class="content">
         <div class="card">
-
             <div class="image" id="image">
                 <div class="hero min-h-screen">
                     <div class="hero-content text-center">
                         <div class="ctn max-w-xl">
                             <h1 class="text-5xl font-bold">My Portofolio</h1>
-                            <p class="py-6">Selamat datang di web Portofilio. Pada web ini saya mengunakan Framework Laravel  dan Tailwind CSS dengan ekstensi DaisyUi. Versi Framework Laravel yang saya gunakan yaitu v8.0</p>
+                            <p class="py-6">Selamat datang di web Portofilio. Pada web ini saya mengunakan Framework
+                                Laravel dan Tailwind CSS dengan ekstensi DaisyUi. Versi Framework Laravel yang saya gunakan
+                                yaitu v8.0</p>
                             <a href="#home" class="btn btn-primary">Get Started</a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="home" id="home">
                 <div class="card-home">
-                    <div class="hero-content w-full flex-row">
-                        <img src="images/athian.jpg" class="max-w-sm mx-auto rounded-lg shadow-2xl" />
+                    <div class="hero-content">
+                        <div class="foto">
+                            <img src="images/athian.jpg" />
+                        </div>
                         <div class="card-body">
                             <div class="body-content">
                                 <h1 class="nama">Athian Rizki</h1>
                                 <p class="py-1">
-                                    Saya seorang mahasiswa tingkat akhir di Universitas Komputer
+                                    Saya seorang freshgraduate atau lulusan baru pada Universitas Komputer
                                     Indonesia dengan jurusan Teknik Informatika. Memiliki
                                     kepribadian yang kompetitif dalam menjalankan tanggungjawab.
-                                    Memiliki pengetahuan dibidang Teknologi Informasi. Memahami
-                                    pemahaman dasar mengenai Framework Laravel, Bahasa Pemrograman
+                                    Memiliki pengetahuan dibidang Teknologi Informasi. Memiliki
+                                    pemahaman mengenai Framework Laravel, Bahasa Pemrograman
                                     PHP, HTML, JavaScript, dan MySql. Memiliki jiwa kepemimpinan
                                     dan pemecahan masalah (Problem Solving).
                                 </p>
@@ -37,7 +39,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="bio" id="biodata">
                 <div class="card-biodata mx-auto rounded-xl">
                     <div class="body-content">
